@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/detailData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailPerhitungan_RataRata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/rumus_rata_rata" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_RataRataPerhitungan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_RataRataPerhitungan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_RataRataHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 12312"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailPerhitungan_df"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_dfRumus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_dfPerhitungan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_dftaHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 12312"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailPerhitungan_variansi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/rumus_variansi" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_variasniPerhitungan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_variasniPerhitungan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_variansiHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 12312"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailPerhitungan_Thitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/rumus_t_test"
+                android:layout_gravity="center"/>
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_tHitungPerhitungan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textColor="@android:color/black" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_tHitungPerhitungan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textColor="@android:color/black"
+                tools:layout_gravity="left">
+
+            </com.jstarczewski.pc.mathview.src.MathView>
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_tHitungPerhitungan3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": (78.23  - 83.12) /(√(12412-12412)"
+                android:textColor="@android:color/black"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_tHitungHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 12312"
+                android:textColor="@android:color/black"
+                tools:layout_gravity="left" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailPerhitungan_SelisihRataRata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/rata_rata1" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/rata_rata2" />
+            </LinearLayout>
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_RataRataPengurangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 78.23  - 83.12"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+
+            <com.jstarczewski.pc.mathview.src.MathView
+                android:id="@+id/detailPerhitungan_SelisihRataRataHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 12312"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:layout_gravity="left" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

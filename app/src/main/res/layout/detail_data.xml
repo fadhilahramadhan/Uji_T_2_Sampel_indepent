@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16CFCFCF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:minHeight="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtdetail_namaData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Nama Data"
+                android:lineSpacingExtra="-5sp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdetail_hipotesis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hipotesis"
+                android:lineSpacingExtra="-5sp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TabHost
+                    android:id="@+id/tabHostVar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:theme="@style/TabVar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            style="@style/MyCustomTabTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center" />
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/var1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView4"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="N"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView26"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_Nvar1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_data1"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView27"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Rata-rata"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView28"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_rataVar1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_RataRata1"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView29"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Variansi"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView30"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_variansiVar1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_variasi1"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView31"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Standar Deviasi"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView32"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_standarDeviasivar1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </ScrollView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/var2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginTop="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView33"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="N"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView34"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_Nvar2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_data2"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView35"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Rata-rata"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView36"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_rataVar2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_RataRata2"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView37"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Variansi"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView38"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_variansiVar2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/btnDetail_variasi2"
+                                                android:layout_width="15dp"
+                                                android:layout_height="15dp"
+                                                android:layout_gravity="center"
+                                                android:layout_marginLeft="5dp"
+                                                android:background="@drawable/detail"
+                                                tools:layout_marginLeft="5dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/textView39"
+                                                android:layout_width="125dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Standar Deviasi"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/textView40"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=": "
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+
+                                            <TextView
+                                                android:id="@+id/txtdetail_standarDeviasivar2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="TextView"
+                                                android:textColor="@android:color/background_dark"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </ScrollView>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </TabHost>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Uji T"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="T hitung"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": "
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtdetail_Thitung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnDetail_tHitung"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/detail"
+                            tools:layout_marginLeft="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="T tabel"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": "
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtdetail_Ttabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="Alpha"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": "
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtdetail_alpha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="df"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": "
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtdetail_df"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnDetail_df"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/detail"
+                            tools:layout_marginLeft="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:text="Selisih rata-rata"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=": "
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtdetail_Selisihrata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnDetail_selisihRataRata"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/detail" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Kesimpulan"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kesimpulan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtdetail_h0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+
+                        android:text="H0 : tidak ada perbedaan"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtdetail_h1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:text="H1 : ada perbedaan"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtdetail_perbandingan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:text="T hitung ( 2.098) > T tabel (2.00)"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/txtdetail_kesimpulan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:text="H0 diterima dan H1 di tolak"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/txtdetail_kesimpulan_hasil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:text='Kesimpulan didapatkan bawha ada perbedaan rata" antara variabel 1 dan variabel 2'
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtdetail_kesimpulan_hasil2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

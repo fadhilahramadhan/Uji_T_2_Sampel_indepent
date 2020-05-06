@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/beranda"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/data"
+            android:icon="@drawable/ic_folder_open_black_24dp"
+            android:title="Data Anda" />
+        <item
+            android:id="@+id/analisis_data"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Analisis Data" />
+
+        <item
+            android:id="@+id/petunjuk"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Panduan" />
+
+        <item
+            android:id="@+id/tentang"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="About" />
+    </group>
+
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Uji T 2 Sampel indepent</string>
+    <string name="navigation_drawe_open">Open Navigation drawer</string>
+    <string name="navigation_drawe_close">Close Navigation drawer</string>
+</resources>
